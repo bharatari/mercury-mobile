@@ -1,0 +1,538 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-SemiboldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+.app-content {
+    background-color: #313131 !important;
+}
+
+.bar-assertive {
+    background-color: #1d1d1d !important;
+}
+
+.nav-bar-large {
+    /* Height Variable */
+    height: 156px !important;
+    margin-top: -54px;
+    background-color: #575757 !important;
+    background-image: linear-gradient(transparent, black);
+}
+
+.headline-box {
+    margin-top: -200px;
+}
+
+.navbar-transparent {
+    display: none;
+}
+
+.nav-button {
+    color: white !important;
+    position: relative;
+    display: block;
+}
+
+.nav-headline {
+    margin-left: 20px;
+}
+
+.nav-headline::before {
+    font-size: 26px;
+    z-index: 999;
+    position: relative;
+}
+
+.nav-button-top {
+    margin-top: 5px;
+}
+
+.platform-android .exonian-mobile, .platform-win32 .exonian-mobile, .platform-windowsphone .exonian-mobile {
+    letter-spacing: -1px;
+}
+
+.platform-android .about-text, .platform-win32 .about-text, .platform-windowsphone .about-text {
+    letter-spacing: -1px;
+}
+
+.overlay {
+    opacity: 0.5;
+    /* Height Variable */
+    height: 150px;
+    margin-top: 45px;
+    position: relative;
+    width: 100%;
+    z-index: 50;
+    background-color: black;
+}
+
+.headline {
+    position: relative;
+    width: 100%;
+    z-index: 150;
+}
+
+.platform-android .headline-text, .platform-win32 .headline-text, .platform-windowsphone .headline-text {
+    letter-spacing: -1px;
+}
+
+.headline-text {
+    position: absolute;
+    bottom: 20px;
+    font-size: 28px;
+    font-family: "Open Sans", "Roboto", "Segoe UI", sans-serif;
+    color: white;
+    font-weight: 700;
+    margin-left: 30px;
+    line-height: normal;
+    margin-right: 17px;
+    margin-top: 20px;
+    letter-spacing: -2px;
+}
+
+.platform-android .nav-bar-title, .platform-win32 .nav-bar-title, .platform-windowsphone .nav-bar-title {
+    font-family: 'Open Sans', 'Helvetica Neue', 'Roboto', 'Segoe UI', sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.platform-android .nav-title-text {
+    text-align: center;
+    margin-left: -50px;
+}
+
+.platform-win32 .nav-title-text, .platform-windowsphone .nav-title-text {
+    text-align: center;
+}
+
+.platform-android .article-title, .platform-win32 .article-title, .platform-windowsphone .article-title {
+    letter-spacing: -1px;
+}
+
+.article-title {
+    font-size: 24px !important;
+    line-height: normal;
+    font-weight: 400;
+    margin-left: 12px;
+    margin-top: 15px;
+    color: white !important;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
+    white-space: normal !important;
+}
+
+.article-title-small {
+    display: inline !important;
+}
+
+.article-title-large {
+    display: none !important;
+}
+
+.article-headline-author {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: darkgray;
+    margin-top: 7px;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.article-author-subtitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: darkgray;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.headline-height {
+    position: relative;
+    /* Height Variable */
+    margin-top: 155px;
+}
+
+.image-background {
+    background-position: top;
+    background-size: cover !important;
+}
+
+.platform-android .article-header, .platform-win32 .article-header, .platform-windowsphone .article-header {
+    letter-spacing: -1px;
+} 
+
+.article-header {
+    font-weight: 300;  
+    color: white;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
+}
+
+.platform-android .article-header, .platform-win32 .article-header, .platform-windowsphone .article-content {
+    font-weight: 300;
+}
+
+.article-content {
+    font-size: 20px;
+    line-height: normal;
+    color: white;
+    margin-top: 20px;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
+}
+
+.content-area {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    background-color: #313131;
+}
+
+.article-author {
+    margin-top: 6px;
+    text-transform: uppercase;
+    color: darkgray;
+    margin-left: 2px;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
+}
+
+.article-date {
+    color: darkgray;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
+    margin-left: 2px
+}
+
+.article-related {
+    display: none;
+}
+
+.no-results {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 32px;
+    font-weight: 300;
+    color: darkgray;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
+}
+
+.article-image {
+    width: 100vw;
+    height: 400px;
+    background-position-y: 10%;
+    background-size: cover !important;
+}
+
+.article-image-wide {
+    height: 180px;
+}
+
+.about-box {
+    margin-top: 35vh;
+}
+
+.about-box h1, h4 {
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
+}
+
+.bold-inline {
+    font-weight: 600;
+}
+
+.pullquote {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.post-item {
+    height: 170px;
+}
+
+.post-item .item-content {
+    height: 100%;
+    width: 100%;
+}
+
+.platform-android .item-content, .platform-win32 .item-content, .platform-windowsphone .item-content {
+    font-family: 'Open Sans';
+    letter-spacing: 0px;
+}
+
+.error-message {
+    margin-left: 15px;
+    line-height: normal;
+    display: block;
+    padding-top: 20px;
+    font-size: 32px;
+    font-weight: 300;
+    color: darkgray;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
+}
+
+.post-overlay {
+    position: fixed; 
+    height: 170px;
+    z-index: -30;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.42);
+    background-position: center;    
+    left: 0;
+    right: 0;
+    margin-top: -17px;
+}
+
+.post-image {
+    position: fixed;
+    height: 170px;
+    z-index: -50;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    right: 0;
+    background-color: #333333;
+    margin-top: -17px;
+}
+
+.post-image-alt {
+    position: fixed;
+    z-index: -50;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    right: 0;
+    background-color: #333333;
+    margin-top: -17px;
+}
+
+.mercury-logo {
+    font-family: 'Open Sans';
+    font-weight: 600 !important;
+    letter-spacing: -1px;
+    padding-left: 15px;
+    font-size: 16px;
+    padding-top: 18px !important;
+    color: #6a6a6a;
+    font-weight: 400;
+}
+
+.menu-list {
+    margin-top: 20px;
+    display: block;
+    margin-left: 20px;
+}
+
+.side-menu {
+    background-color: whitesmoke;
+}
+
+.recent-posts-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 29px;
+    background-color: #008667;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.app-headline {
+    margin-top: -44px;
+}
+
+.menu-item {
+    border: none;
+}
+
+.menu-item a {
+    font-weight: 700;
+    font-family: 'Open Sans' !important;
+    text-transform: uppercase;
+    letter-spacing: 1px !important;
+    color: #434343;
+    background-color: whitesmoke !important;
+}
+
+.search-box-wrapper {
+    background-color: #414141;
+    border: none;
+}
+
+.search-box {
+    background-color: #414141;
+}
+
+.button-search {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.button-search:hover {
+    color: white;
+}
+
+.button-search:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+}
+
+.input-full-width {
+    width: 100%;
+    color: white !important;
+    font-family: 'Open Sans';
+}
+
+/* iPhone 5 and iPhone 4 screen sizes */
+@media only screen and (max-height : 570px) {
+    .nav-bar-large {
+        /* Height Variable */
+        height: 200px !important;
+    }
+
+    .overlay {
+        /* Height Variable */
+        opacity: 0.7;
+        height: 150px;
+    }
+    
+    .headline-height {
+        /* Height Variable */
+        margin-top: 155px;
+    }
+}
+
+/** iPhone 4 landscape screen sizes **/
+@media only screen and (min-width : 320px) and (max-width : 480px) and (orientation : landscape) { 
+    .nav-bar-large {
+        /* Height Variable */
+        height: 180px !important;
+    }
+
+    .overlay {
+        /* Height Variable */
+        opacity: 0.7;
+        height: 130px;
+    }
+
+    .headline-height {
+        /* Height Variable */
+        margin-top: 125px;
+    }
+    
+    .headline-text {
+        bottom: 10px;
+    }
+}
+
+/** iPhone 5 landscape screen sizes **/
+@media only screen and (min-width : 320px) and (max-width: 1024px) and (orientation : landscape) { 
+    .nav-bar-large {
+        /* Height Variable */
+        height: 160px !important;
+    }
+
+    .overlay {
+        /* Height Variable */
+        opacity: 0.7;
+        height: 110px;
+    }
+
+    .headline-height {
+        /* Height Variable */
+        margin-top: 115px;
+    }
+    
+    .headline-text {
+        bottom: 10px;
+    }
+}
+
+/** iPad screen sizes **/
+@media only screen and (min-width : 768px)  { 
+    
+}
+
+/** Large screen sizes **/
+@media only screen and (min-width : 1200px)  { 
+    
+}
+
+@media only screen and (min-width : 2000px)  { 
+
+}
+
+@media only screen and (min-width : 2200px)  { 
+
+}
