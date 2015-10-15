@@ -14,12 +14,12 @@
                 <i class="ion-search"></i>
             </button>
         </div>
-        <ion-list>
+        <ion-list class="posts-category">
             <div class="post-list-category">
                 <ion-item class="post-item" ng-repeat="Post in Posts" href="#/app/article/{{Post.id}}" ng-if="Posts.length > 1">
                     <div class="post-overlay"></div>
                     <div class="post-image" image-lazy-src="{{Post._postImage}}" image-lazy-background-image="true"></div>
-                    <p class="article-title">{{Post.title}}</p>
+                    <p class="article-title" ng-bind-html="Post.title"></p>
                 </ion-item>
                 <p class="no-results" ng-if="Posts.length < 1">No results.</p>
             </div>

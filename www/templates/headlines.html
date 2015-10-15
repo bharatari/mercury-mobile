@@ -1,4 +1,5 @@
 <ion-view>
+<!-- I think this is creating that white background flash -->
   <ion-nav-bar class="navbar-transparent">    
       
   </ion-nav-bar>
@@ -17,13 +18,15 @@
                          pulling-icon="ion-android-arrow-down"
                          on-refresh="refresh()">
           </ion-refresher>
-          <div class="recent-posts-band">
+          <!--<div class="recent-posts-band">
               <p class="recent-posts-header">RECENT POSTS</p>
-          </div>
+          </div>-->
           <ion-list class="posts">
               <ion-item ng-repeat="Post in Posts" class="post-item" href="#/app/article/{{Post.id}}">
                   <div class="post-overlay"></div>
                   <div class="post-image" image-lazy-src="{{Post._postImage}}" image-lazy-background-image="true"></div>
+                  <p class="article-category" ng-bind-html="Post.categories[0].title"></p>
+                  
                   <p class="article-title" ng-bind-html="Post.title"></p>                  
               </ion-item>
           </ion-list>

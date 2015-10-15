@@ -15,12 +15,13 @@
                 pulling-icon="ion-android-arrow-down"
                 on-refresh="refresh()">
             </ion-refresher>
-            <ion-list>
+            <ion-list class="posts-category">
                 <div>
                     <div ng-repeat="Post in Posts" class="post-item item item-complex" href="#/app/article/{{Post.id}}">             
                       <a class="item-content" href="#/app/article/{{Post.id}}">
                           <div class="post-overlay"></div>
                           <div class="post-image" image-lazy-src="{{Post._postImage}}" image-lazy-background-image="true"></div>
+                          <p class="article-category" ng-bind-html="Post.categories[0].title"></p>
                           <p class="article-title" ng-bind-html="Post.title"></p>
                       </a>
                   </div>

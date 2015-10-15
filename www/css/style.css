@@ -80,8 +80,7 @@
     /* Height Variable */
     height: 156px !important;
     margin-top: -54px;
-    background-color: #575757 !important;
-    background-image: linear-gradient(transparent, black);
+    background-color: #909090 !important;
 }
 
 .headline-box {
@@ -123,7 +122,7 @@
 .overlay {
     opacity: 0.5;
     /* Height Variable */
-    height: 150px;
+    height: 155px;
     margin-top: 45px;
     position: relative;
     width: 100%;
@@ -155,10 +154,12 @@
     letter-spacing: -2px;
 }
 
-.platform-android .nav-bar-title, .platform-win32 .nav-bar-title, .platform-windowsphone .nav-bar-title {
+.nav-bar-title {
     font-family: 'Open Sans', 'Helvetica Neue', 'Roboto', 'Segoe UI', sans-serif;
-    font-weight: 600;
-    letter-spacing: -1px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .platform-android .nav-title-text {
@@ -177,7 +178,7 @@
 .article-title {
     font-size: 24px !important;
     line-height: normal;
-    font-weight: 400;
+    font-weight: 700;
     margin-left: 12px;
     margin-top: 15px;
     color: white !important;
@@ -191,6 +192,21 @@
 
 .article-title-large {
     display: none !important;
+}
+
+.article-category {    
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #c6c6c6 !important;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    display: inline;
+    padding-top: 5px;
+    border-bottom: 2px solid #c6c6c6;
+    font-size: 13px;
+    margin-left: 13px;
+    font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
 }
 
 .article-headline-author {
@@ -215,8 +231,6 @@
 
 .headline-height {
     position: relative;
-    /* Height Variable */
-    margin-top: 155px;
 }
 
 .image-background {
@@ -313,6 +327,9 @@
 
 .post-item {
     height: 170px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .post-item .item-content {
@@ -341,11 +358,13 @@
     height: 170px;
     z-index: -30;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.42);
+    background-color: rgba(0, 0, 0, 0.45);
     background-position: center;    
     left: 0;
     right: 0;
     margin-top: -17px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .post-image {
@@ -356,8 +375,10 @@
     background-position: center;
     left: 0;
     right: 0;
-    background-color: #333333;
+    background-color: #888888;
     margin-top: -17px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .post-image-alt {
@@ -454,69 +475,14 @@
     font-family: 'Open Sans';
 }
 
-/* iPhone 5 and iPhone 4 screen sizes */
-@media only screen and (max-height : 570px) {
-    .nav-bar-large {
-        /* Height Variable */
-        height: 200px !important;
-    }
-
-    .overlay {
-        /* Height Variable */
-        opacity: 0.7;
-        height: 150px;
-    }
-    
-    .headline-height {
-        /* Height Variable */
-        margin-top: 155px;
-    }
+.posts {
+    margin-top: 15px;
+    display: block;
 }
 
-/** iPhone 4 landscape screen sizes **/
-@media only screen and (min-width : 320px) and (max-width : 480px) and (orientation : landscape) { 
-    .nav-bar-large {
-        /* Height Variable */
-        height: 180px !important;
-    }
-
-    .overlay {
-        /* Height Variable */
-        opacity: 0.7;
-        height: 130px;
-    }
-
-    .headline-height {
-        /* Height Variable */
-        margin-top: 125px;
-    }
-    
-    .headline-text {
-        bottom: 10px;
-    }
-}
-
-/** iPhone 5 landscape screen sizes **/
-@media only screen and (min-width : 320px) and (max-width: 1024px) and (orientation : landscape) { 
-    .nav-bar-large {
-        /* Height Variable */
-        height: 160px !important;
-    }
-
-    .overlay {
-        /* Height Variable */
-        opacity: 0.7;
-        height: 110px;
-    }
-
-    .headline-height {
-        /* Height Variable */
-        margin-top: 115px;
-    }
-    
-    .headline-text {
-        bottom: 10px;
-    }
+.posts-category {
+    margin-top: 10px;
+    display: block;
 }
 
 /** iPad screen sizes **/
