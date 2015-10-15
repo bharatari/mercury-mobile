@@ -98,7 +98,7 @@
 }
 
 .nav-headline {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .nav-headline::before {
@@ -147,7 +147,7 @@
     font-family: "Open Sans", "Roboto", "Segoe UI", sans-serif;
     color: white;
     font-weight: 700;
-    margin-left: 30px;
+    margin-left: 23px;
     line-height: normal;
     margin-right: 17px;
     margin-top: 20px;
@@ -179,7 +179,7 @@
     font-size: 24px !important;
     line-height: normal;
     font-weight: 700;
-    margin-left: 12px;
+    margin-left: 10px;
     margin-top: 15px;
     color: white !important;
     font-family: "Helvetica Neue", "Open Sans", "Roboto", "Segoe UI", sans-serif;
