@@ -25,9 +25,10 @@
               <ion-item ng-repeat="Post in Posts" class="post-item" href="#/app/article/{{Post.id}}">
                   <div class="post-overlay"></div>
                   <div class="post-image" image-lazy-src="{{Post._postImage}}" image-lazy-background-image="true"></div>
-                  <p class="article-category" ng-bind-html="Post.categories[0].title"></p>
-                  
-                  <p class="article-title" ng-bind-html="Post.title"></p>                  
+                  <div class="post-content-box">
+                      <p class="article-category" ng-bind-html="Post.categories[0].title"></p>
+                      <p class="article-title" ng-bind-html="Post.title"></p> 
+                  </div>
               </ion-item>
           </ion-list>
           <ion-infinite-scroll

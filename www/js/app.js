@@ -14,14 +14,19 @@ angular.module('MercuryApp', ['ionic', 'MercuryApp.controllers', 'MercuryApp.ser
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
     }
+    ionic.Platform.fullScreen();
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
+      StatusBar.hide();
     }
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+  //if(ionic.Platform.isAndroid() || ionic.Platform.isWindowsPhone()) {
+      //$ionicConfigProvider.scrolling.jsScrolling(false);
+  //}   
+    
   $stateProvider
   .state('app', {
     url: "/app",
