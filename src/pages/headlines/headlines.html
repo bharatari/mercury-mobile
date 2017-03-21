@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="headline">
+    <button ion-button menuToggle class="headline-menu-toggle">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <img class="headline-brand" src="assets/img/logo.png" />
+    <h3 class="headline-text" (click)="goToArticle($event, featuredPost)">{{featuredPost?.title}}</h3>
+    <ion-img *ngIf="featuredPost?.image" class="headline-image" [src]="featuredPost?.image"></ion-img>
+  </div>
+
+  <ion-list class="posts-container" [virtualScroll]="recentPosts" approxItemHeight="150px" approxItemWidth="100%">
+    <div class="post-container" *virtualItem="let post">
+      <post-component [content]="content" (click)="goToArticle($event, post)" [title]="post.title" [category]="post.category" [image]="post.image"></post-component>
+    </div>
+  </ion-list>
+
+  <p *ngIf="error" class="error-message">Something went wrong there. Please try again later.</p>
+</ion-content>

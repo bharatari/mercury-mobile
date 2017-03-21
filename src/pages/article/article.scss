@@ -1,0 +1,52 @@
+page-article .content {
+  background-color: whitesmoke !important;
+}
+
+.article-image {
+  background-position: top;
+  background-size: cover !important;
+  box-shadow: none;
+  height: 150px;
+}
+
+.article-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.article-caption {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: italic;
+  font-size: 12px;
+  color: #373636;
+}
+
+.article-category {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: darkgray;
+  margin-bottom: -15px;
+  display: block;
+}
+
+.article-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #313131;
+}
+
+.article-author {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.article-content {
+  font-family: 'Lora', sans-serif;
+  color: #313131;
+}

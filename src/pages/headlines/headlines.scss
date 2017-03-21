@@ -1,0 +1,64 @@
+$left-padding: 20px;
+$top-padding: 10px;
+$height: 190px;
+
+page-headlines .content {
+  background-color: map-get($colors, background) !important;
+}
+
+.headline {
+  height: $height;
+  background-color: #909090 !important;
+  padding-left: $left-padding;
+  padding-top: $top-padding;
+  padding-right: 10px;
+}
+
+.headline-text {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Roboto', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  z-index: 100;
+  position: relative;
+  color: white;
+  letter-spacing: -1px;
+}
+
+.headline-image {
+  height: $height;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.headline .img-loaded {
+  opacity: 1;
+}
+
+.headline::before {
+  content: "";
+  opacity: 0.5;
+  width: 100%;
+  height: $height;
+  z-index: 50;
+  background-color: black;
+  position: absolute;
+  display: block;
+  margin-top: -$top-padding;
+  margin-left: -$left-padding;
+}
+
+.headline-menu-toggle {
+  z-index: 100;
+}
+
+.headline-brand {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 100;
+  height: 35px;
+}

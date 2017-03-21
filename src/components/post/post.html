@@ -1,0 +1,12 @@
+<!--
+  Generated template for the Post component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<ion-card>
+  <div class="post-subtitle" [innerHTML]="category"></div>
+  <div class="post-title" [innerHTML]="title"></div>
+  <ion-img class="post-image" [class.no-img]="!image" [src]="image" cache="true"></ion-img>
+</ion-card>

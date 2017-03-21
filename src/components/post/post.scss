@@ -1,0 +1,83 @@
+$height: 150px;
+$left-padding: 20px;
+$right-padding: 20px;
+
+post-component {
+  width: 100%;
+}
+
+post-component .card {
+  height: $height;
+  border: none;
+  outline: none;
+  padding-left: $left-padding;
+  padding-top: $right-padding;
+  position: relative;
+  background-color: #7f7f7f;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+post-component .post-image {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: $height;
+  transition: opacity 0.2s ease-in-out;
+}
+
+post-component ion-img {
+  background: none;
+}
+
+post-component .img-loaded {
+  opacity: 1;
+}
+
+post-component .no-img {
+  opacity: 1;
+}
+
+post-component .post-image::before {
+  content: "";
+  opacity: 0.5;
+  height: $height;
+  z-index: 50;
+  background-color: black;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.post-title {
+  z-index: 100;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Roboto', 'Segoe UI', sans-serif;;
+  line-height: normal;
+  font-weight: 600;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  white-space: normal !important;
+  padding-top: 10px;
+}
+
+.post-subtitle {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #c6c6c6 !important;
+  padding-bottom: 5px;
+  display: inline;
+  border-bottom: 2px solid #c6c6c6;
+  font-size: 13px !important;
+  font-family: 'Helvetica Neue', 'Open Sans', 'Roboto', 'Segoe UI', sans-serif;
+  z-index: 100;
+  position: relative;
+}

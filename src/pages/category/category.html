@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="navbar-title">{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list class="posts-container" [virtualScroll]="categoryPosts"approxItemHeight="150px" approxItemWidth="100%">
+    <div class="post-container" *virtualItem="let post">
+      <post-component [content]="content" (click)="goToArticle($event, post)" [title]="post.title" [category]="post.category" [image]="post.image"></post-component>
+    </div>
+  </ion-list>
+
+  <p *ngIf="error" class="error-message">Something went wrong there. Please try again later.</p>
+  
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+   <ion-infinite-scroll-content></ion-infinite-scroll-content>
+ </ion-infinite-scroll>
+</ion-content>
+

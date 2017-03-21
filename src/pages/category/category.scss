@@ -1,0 +1,11 @@
+page-category .content {
+  background-color: map-get($colors, background) !important;
+}
+
+page-category .toolbar-background {
+  background-color: map-get($colors, navbar) !important;
+}
+
+page-category .bar-button-menutoggle {
+  color: white;
+}
