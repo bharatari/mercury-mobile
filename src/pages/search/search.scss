@@ -1,0 +1,19 @@
+page-search .content {
+  background-color: map-get($colors, background) !important;
+}
+
+.search-form {
+  background-color: gray;
+  height: 50px;
+}
+
+.search-input {
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-family: 'Open Sans';
+}

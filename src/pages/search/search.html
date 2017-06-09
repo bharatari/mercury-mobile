@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="navbar-title">Search</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form class="search-form" (submit)="load(true)">
+    <input class="search-input" type="text" placeholder="Search" [(ngModel)]="term" name="term" />
+  </form>
+
+  <ion-list class="posts-container" [virtualScroll]="searchPosts"approxItemHeight="150px" approxItemWidth="100%">
+    <div class="post-container" *virtualItem="let post">
+      <post-component [content]="content" (click)="goToArticle($event, post)" [title]="post.title" [category]="post.category" [image]="post.image"></post-component>
+    </div>
+  </ion-list>
+
+  <p *ngIf="error" class="error-message">Something went wrong there. Please try again later.</p>
+  <p *ngIf="(this.searchPosts && this.searchPosts?.length < 1) && !error" class="error-message">No results.</p>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+   <ion-infinite-scroll-content></ion-infinite-scroll-content>
+ </ion-infinite-scroll>
+</ion-content>
+

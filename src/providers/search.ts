@@ -12,11 +12,16 @@ import 'rxjs/add/operator/map';
 export class Search {
   constructor(public http: Http) { }
 
+  get(url) {
+    return this.http.get(url).toPromise()
+      .then((res) => res.json());
+  }
+
   getSearch(term) {
-    return this.http.get(`http://www.utdmercury.com/api/core/get_search_results/?search=${term}`);
+    return this.get(`http://www.utdmercury.com/api/core/get_search_results/?search=${term}`);
   }
 
   getSearchPage(term, page) {
-    return this.http.get(`http://www.utdmercury.com/api/core/get_search_results/?search=${term}&page=${page}`);
+    return this.get(`http://www.utdmercury.com/api/core/get_search_results/?search=${term}&page=${page}`);
   }
 }

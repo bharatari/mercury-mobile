@@ -7,7 +7,10 @@
     <button ion-button menuToggle class="headline-menu-toggle">
       <ion-icon name="menu"></ion-icon>
     </button>
-    <img class="headline-brand" src="assets/img/logo.png" />
+    <p class="headline-brand">THE MERCURY</p>
+    <button (click)="goToSearch()">
+      <ion-icon class="headline-search" name="search"></ion-icon>
+    </button>
     <h3 class="headline-text" (click)="goToArticle($event, featuredPost)">{{featuredPost?.title}}</h3>
     <ion-img *ngIf="featuredPost?.image" class="headline-image" [src]="featuredPost?.image"></ion-img>
   </div>

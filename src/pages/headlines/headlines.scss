@@ -1,6 +1,6 @@
 $left-padding: 20px;
 $top-padding: 10px;
-$height: 190px;
+$height: 230px;
 
 page-headlines .content {
   background-color: map-get($colors, background) !important;
@@ -12,9 +12,11 @@ page-headlines .content {
   padding-left: $left-padding;
   padding-top: $top-padding;
   padding-right: 10px;
+  overflow: hidden;
 }
 
 .headline-text {
+  height: $height - 80px;
   font-family: 'Open Sans', 'Helvetica Neue', 'Roboto', 'Segoe UI', sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -22,6 +24,7 @@ page-headlines .content {
   position: relative;
   color: white;
   letter-spacing: -1px;
+  overflow: hidden;
 }
 
 .headline-image {
@@ -56,9 +59,21 @@ page-headlines .content {
 }
 
 .headline-brand {
+  color: white;
   position: absolute;
-  right: 20px;
-  top: 15px;
+  left: 80px;
+  top: 8px;
+  font-family: 'Open Sans';
   z-index: 100;
   height: 35px;
+  font-weight: 700;
+}
+
+.headline-search {
+  color: white;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  z-index: 100;
+  display: block;
 }

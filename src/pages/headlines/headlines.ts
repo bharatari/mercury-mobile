@@ -3,6 +3,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController, LoadingController, Content } from 'ionic-angular';
 
 import { Article as ArticlePage } from '../article/article';
+import { Search } from '../search/search';
 import { Posts } from '../../providers/posts';
 import { Utils } from '../../providers/utils';
 import { Article } from '../../models/article';
@@ -73,5 +74,9 @@ export class Headlines {
     this.navCtrl.push(ArticlePage, {
       id: post.id,
     });
+  }
+
+  goToSearch() {
+    this.navCtrl.push(Search);
   }
 }

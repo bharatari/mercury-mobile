@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { Headlines } from '../pages/headlines/headlines';
 import { Category } from '../pages/category/category';
 import { Article } from '../pages/article/article';
+import { Search as SearchPage } from '../pages/search/search';
 import { Posts } from '../providers/posts';
 import { Search } from '../providers/search';
 import { Utils } from '../providers/utils';
@@ -15,7 +16,8 @@ import { PostComponent } from '../components/post/post';
     Headlines,
     PostComponent,
     Category,
-    Article
+    Article,
+    SearchPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -25,7 +27,8 @@ import { PostComponent } from '../components/post/post';
     MyApp,
     Headlines,
     Category,
-    Article
+    Article,
+    SearchPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Posts, Search, Utils]
 })

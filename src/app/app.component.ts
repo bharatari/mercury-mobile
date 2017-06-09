@@ -4,6 +4,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Headlines } from '../pages/headlines/headlines';
 import { Category } from '../pages/category/category';
+import { Search } from '../pages/search/search';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,7 +26,8 @@ export class MyApp {
       { title: 'Life & Arts', component: Category, category: 'life-arts' },
       { title: 'Opinion', component: Category, category: 'opinion' },
       { title: 'Sports', component: Category, category: 'sports' },
-      { title: 'Comics', component: Category, category: 'comics' }
+      { title: 'Comics', component: Category, category: 'comics' },
+      { title: 'Search', component: Search, category: null }
     ];
 
   }
